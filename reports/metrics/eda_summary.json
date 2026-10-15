@@ -1,0 +1,82 @@
+{
+  "raw_sizes": {
+    "train": 43410,
+    "validation": 5426,
+    "test": 5427
+  },
+  "mapped_sizes": {
+    "test": 3539,
+    "train": 28104,
+    "validation": 3527
+  },
+  "train_mapping_outcome": {
+    "dropped: neutral only": 12823,
+    "kept (single Ekman class)": 28104,
+    "dropped: conflicting classes": 2483
+  },
+  "class_distribution": {
+    "test": {
+      "joy": 1937,
+      "sadness": 298,
+      "anger": 609,
+      "fear": 85,
+      "surprise": 533,
+      "disgust": 77
+    },
+    "train": {
+      "joy": 15809,
+      "sadness": 2455,
+      "anger": 4590,
+      "fear": 566,
+      "surprise": 4160,
+      "disgust": 524
+    },
+    "validation": {
+      "joy": 2017,
+      "sadness": 278,
+      "anger": 596,
+      "fear": 77,
+      "surprise": 497,
+      "disgust": 62
+    }
+  },
+  "length_percentiles": {
+    "50": 13,
+    "90": 23,
+    "95": 24,
+    "99": 27
+  },
+  "pct_truncated": 0.0,
+  "examples": {
+    "joy": [
+      "Yes I heard abt the f bombs! That has to be why. Thanks for your reply:) until then hubby and I will anxiously wait \ud83d\ude1d",
+      "We need more boards and to create a bit more space for [NAME]. Then we\u2019ll be good.",
+      "Damn youtube and outrage drama is super lucrative for reddit"
+    ],
+    "sadness": [
+      "i got a bump and a bald spot. i feel dumb <3",
+      "I miss them being alive",
+      "Pretty sure I\u2019ve seen this. He swings away with the harness he is wearing. Still looks painful but I think he lives"
+    ],
+    "anger": [
+      "WHY THE FUCK IS BAYLESS ISOING",
+      "Dirty Southern Wankers",
+      "[NAME] - same fucking problem, slightly better command of the English language."
+    ],
+    "fear": [
+      "To make her feel threatened",
+      "Your coaching is terrible.... be ready and see how [NAME] uses [NAME]",
+      "He may have, I was more worried about the \"running and shooting the AR one handed, off to the side\"."
+    ],
+    "surprise": [
+      "OmG pEyToN iSn'T gOoD eNoUgH tO hElP uS iN tHe PlAyOfFs! Dumbass Broncos fans circa December 2015.",
+      "Demographics? I don\u2019t know anybody under 35 who has cable tv.",
+      "Maybe that\u2019s what happened to the great white at Houston zoo"
+    ],
+    "disgust": [
+      "youre a disgusting piece of filth.",
+      "[NAME]",
+      "Not surprised, damn that sucks. Concussions are awful."
+    ]
+  }
+}

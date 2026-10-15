@@ -1,0 +1,88 @@
+{
+  "accuracy": 0.8140717716869172,
+  "macro_f1": 0.707899928897556,
+  "weighted_f1": 0.8147621377858427,
+  "per_class": {
+    "joy": {
+      "precision": 0.9209549071618037,
+      "recall": 0.8962312854930304,
+      "f1-score": 0.9084249084249084,
+      "support": 1937.0
+    },
+    "sadness": {
+      "precision": 0.6992481203007519,
+      "recall": 0.6241610738255033,
+      "f1-score": 0.6595744680851063,
+      "support": 298.0
+    },
+    "anger": {
+      "precision": 0.6825153374233128,
+      "recall": 0.7307060755336617,
+      "f1-score": 0.7057890563045203,
+      "support": 609.0
+    },
+    "fear": {
+      "precision": 0.64,
+      "recall": 0.7529411764705882,
+      "f1-score": 0.6918918918918919,
+      "support": 85.0
+    },
+    "surprise": {
+      "precision": 0.7182608695652174,
+      "recall": 0.774859287054409,
+      "f1-score": 0.7454873646209387,
+      "support": 533.0
+    },
+    "disgust": {
+      "precision": 0.6065573770491803,
+      "recall": 0.4805194805194805,
+      "f1-score": 0.5362318840579711,
+      "support": 77.0
+    }
+  },
+  "best_val_macro_f1": 0.7249705292060784,
+  "train_seconds": 2324.120491504669,
+  "trainable_params": 66958086,
+  "history": [
+    {
+      "eval_loss": 0.6803891062736511,
+      "eval_accuracy": 0.8154238729798696,
+      "eval_macro_f1": 0.7016100025125477,
+      "eval_runtime": 22.2557,
+      "eval_samples_per_second": 158.476,
+      "eval_steps_per_second": 2.516,
+      "epoch": 1.0,
+      "step": 879
+    },
+    {
+      "eval_loss": 0.6448996663093567,
+      "eval_accuracy": 0.8114544939041678,
+      "eval_macro_f1": 0.7025227939741431,
+      "eval_runtime": 22.2398,
+      "eval_samples_per_second": 158.59,
+      "eval_steps_per_second": 2.518,
+      "epoch": 2.0,
+      "step": 1758
+    },
+    {
+      "eval_loss": 0.7099805474281311,
+      "eval_accuracy": 0.8273320102069748,
+      "eval_macro_f1": 0.7249705292060784,
+      "eval_runtime": 22.2517,
+      "eval_samples_per_second": 158.504,
+      "eval_steps_per_second": 2.517,
+      "epoch": 3.0,
+      "step": 2637
+    },
+    {
+      "eval_loss": 0.7817866802215576,
+      "eval_accuracy": 0.821661468670258,
+      "eval_macro_f1": 0.7076400550608365,
+      "eval_runtime": 34.157,
+      "eval_samples_per_second": 103.259,
+      "eval_steps_per_second": 1.639,
+      "epoch": 4.0,
+      "step": 3516
+    }
+  ]
+}

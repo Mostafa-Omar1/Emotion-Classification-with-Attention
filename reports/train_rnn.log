@@ -1,0 +1,90 @@
+vocab size 9,725  GloVe coverage 96.2%
+
+##### lstm  (1,091,034 trainable params) on cuda
+epoch  1  loss 1.4081  val_acc 0.6756  val_macro_f1 0.3971
+epoch  2  loss 1.1222  val_acc 0.7258  val_macro_f1 0.5682
+epoch  3  loss 0.9490  val_acc 0.7528  val_macro_f1 0.6354
+epoch  4  loss 0.8530  val_acc 0.7712  val_macro_f1 0.6555
+epoch  5  loss 0.7910  val_acc 0.7698  val_macro_f1 0.6672
+epoch  6  loss 0.7407  val_acc 0.7718  val_macro_f1 0.6736
+epoch  7  loss 0.7120  val_acc 0.7769  val_macro_f1 0.6686
+epoch  8  loss 0.6702  val_acc 0.7737  val_macro_f1 0.6638
+epoch  9  loss 0.6306  val_acc 0.7783  val_macro_f1 0.6744
+epoch 10  loss 0.6124  val_acc 0.7771  val_macro_f1 0.6668
+epoch 11  loss 0.5946  val_acc 0.7771  val_macro_f1 0.6639
+epoch 12  loss 0.5745  val_acc 0.7757  val_macro_f1 0.6635
+epoch 13  loss 0.5609  val_acc 0.7788  val_macro_f1 0.6695
+early stopping
+
+=== lstm — test ===
+              precision    recall  f1-score   support
+
+         joy     0.9002    0.8472    0.8729      1937
+     sadness     0.6500    0.6107    0.6298       298
+       anger     0.6046    0.6880    0.6436       609
+        fear     0.6489    0.7176    0.6816        85
+    surprise     0.6810    0.7129    0.6966       533
+     disgust     0.5165    0.6104    0.5595        77
+
+    accuracy                         0.7714      3539
+   macro avg     0.6669    0.6978    0.6807      3539
+weighted avg     0.7809    0.7714    0.7750      3539
+
+accuracy=0.7714  macro_f1=0.6807
+
+##### gru  (1,061,594 trainable params) on cuda
+epoch  1  loss 1.3768  val_acc 0.6989  val_macro_f1 0.5078
+epoch  2  loss 1.0352  val_acc 0.7499  val_macro_f1 0.6251
+epoch  3  loss 0.8906  val_acc 0.7692  val_macro_f1 0.6649
+epoch  4  loss 0.8203  val_acc 0.7695  val_macro_f1 0.6531
+epoch  5  loss 0.7732  val_acc 0.7726  val_macro_f1 0.6712
+epoch  6  loss 0.7299  val_acc 0.7840  val_macro_f1 0.6833
+epoch  7  loss 0.6919  val_acc 0.7706  val_macro_f1 0.6635
+epoch  8  loss 0.6659  val_acc 0.7754  val_macro_f1 0.6641
+epoch  9  loss 0.6185  val_acc 0.7788  val_macro_f1 0.6715
+epoch 10  loss 0.6003  val_acc 0.7808  val_macro_f1 0.6742
+early stopping
+
+=== gru — test ===
+              precision    recall  f1-score   support
+
+         joy     0.8711    0.8761    0.8736      1937
+     sadness     0.6783    0.5872    0.6295       298
+       anger     0.6484    0.6207    0.6342       609
+        fear     0.6905    0.6824    0.6864        85
+    surprise     0.6772    0.7242    0.6999       533
+     disgust     0.5104    0.6364    0.5665        77
+
+    accuracy                         0.7751      3539
+   macro avg     0.6793    0.6878    0.6817      3539
+weighted avg     0.7752    0.7751    0.7745      3539
+
+accuracy=0.7751  macro_f1=0.6817
+
+##### bilstm_attention  (1,242,586 trainable params) on cuda
+epoch  1  loss 1.2422  val_acc 0.7516  val_macro_f1 0.6339
+epoch  2  loss 0.9461  val_acc 0.7752  val_macro_f1 0.6663
+epoch  3  loss 0.8506  val_acc 0.7749  val_macro_f1 0.6695
+epoch  4  loss 0.7941  val_acc 0.7780  val_macro_f1 0.6697
+epoch  5  loss 0.7406  val_acc 0.7876  val_macro_f1 0.6841
+epoch  6  loss 0.7067  val_acc 0.7797  val_macro_f1 0.6739
+epoch  7  loss 0.6685  val_acc 0.7888  val_macro_f1 0.6750
+epoch  8  loss 0.6324  val_acc 0.7865  val_macro_f1 0.6746
+epoch  9  loss 0.6152  val_acc 0.7859  val_macro_f1 0.6751
+early stopping
+
+=== bilstm_attention — test ===
+              precision    recall  f1-score   support
+
+         joy     0.8886    0.8647    0.8765      1937
+     sadness     0.6327    0.6242    0.6284       298
+       anger     0.6506    0.6634    0.6569       609
+        fear     0.6304    0.6824    0.6554        85
+    surprise     0.6868    0.7242    0.7050       533
+     disgust     0.5294    0.5844    0.5556        77
+
+    accuracy                         0.7782      3539
+   macro avg     0.6697    0.6905    0.6796      3539
+weighted avg     0.7817    0.7782    0.7797      3539
+
+accuracy=0.7782  macro_f1=0.6796
