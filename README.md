@@ -136,7 +136,7 @@ fp16, best checkpoint (epoch 3) selected on validation macro-F1.
 ```
 ├── app.py                      # Gradio web app
 ├── requirements.txt
-├── scripts/download_models.py  # fetches the fine-tuned DistilBERT from the GitHub release
+├── scripts/download_models.py  # reassembles DistilBERT from models/distilbert_parts/
 ├── src/
 │   ├── config.py               # paths, label mapping, hyper-parameters
 │   ├── data.py                 # loading, Ekman mapping, cleaning, tokenising, padding
@@ -149,7 +149,7 @@ fp16, best checkpoint (epoch 3) selected on validation macro-F1.
 │   ├── compare.py              # comparison table + chart
 │   ├── eda.py                  # exploratory analysis
 │   └── predict.py              # inference helpers
-├── models/                     # LSTM / GRU / BiLSTM checkpoints + vocab (DistilBERT via release)
+├── models/                     # LSTM / GRU / BiLSTM checkpoints, vocab, DistilBERT (split zip)
 └── reports/                    # figures, metrics JSON, training logs, results.md
 ```
 
@@ -159,7 +159,8 @@ fp16, best checkpoint (epoch 3) selected on validation macro-F1.
 pip install -r requirements.txt          # + PyTorch with CUDA from pytorch.org if you have a GPU
 ```
 
-**Just the app** (RNN checkpoints are in the repo; DistilBERT weights are in the v1.0 release):
+**Just the app** (all checkpoints are in the repo; DistilBERT is stored in fp16 as a zip split into
+6 × 20 MB parts in `models/distilbert_parts/` — the script reassembles it into `models/distilbert/`):
 
 ```bash
 python scripts/download_models.py
